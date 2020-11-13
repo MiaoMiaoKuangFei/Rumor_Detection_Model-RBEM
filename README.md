@@ -1,2 +1,2 @@
-# Quick-Thought-Model-Based-Chinese-Rumor-Detection-Model
+# rumor_detection
 rumor detection for python courses project
