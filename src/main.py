@@ -4,6 +4,8 @@
 # @Author  : Zhutian Lin
 # @FileName: main.py
 # @Software: PyCharm
+import sys
+
 import src.preprocess as sp
 import src.trainer as sr
 from sklearn.linear_model import LogisticRegression
@@ -15,12 +17,15 @@ Entrance for serial experiments
 '''
 
 if __name__ == '__main__':
+    ds_path = sys.argv[1]
+    ratio = sys.argv[2]
+
     #  Data pre-processing.
     print("\t\t\t------------------------------------------------\t\t\t")
     print("\t\t\t\t\tData Preprocessing\t\t\t")
     print("\t\t\t------------------------------------------------\t\t\t")
-    whole_ds = sp.preprocess_rumor(sp.load_dataset("dataset/covid19_rumors.csv"))
-    train_ri, test_ri = sp.train_test_split(0.5, whole_ds)
+    whole_ds = sp.preprocess_rumor(sp.load_dataset(ds_path))
+    train_ri, test_ri = sp.train_test_split(ratio, whole_ds)
     trt, trs, tet, tes = sr.tokenlize_train_and_test(train_ri, test_ri)
 
     #  Decision Tree Classifier.
