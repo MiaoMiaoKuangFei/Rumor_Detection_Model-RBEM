@@ -7,7 +7,7 @@
 - Numpy
 - Pandas
 - sklearn
-- keras
+- keras(base on tensorsflow)
 - matplotlib
 
 # arg
