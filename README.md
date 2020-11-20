@@ -1,7 +1,7 @@
 # Rumor_Detection_Model-RBEM
-> Author:Zhutian Lin
-
-> Computer College
+> Author: Zhutian Lin
+>
+> Institude: Computer College, NKU
 
 # Need
 - Numpy
