@@ -20,7 +20,7 @@ data_distribution.py
 - ds_path = sys.argv[1]  : path of dataset
 - font_path = sys.argv[2]  : font file path in folder 'figure'
 
-``
+```
 
 # Demo
 ```
